@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.logo{
+    font-family: "Itim", cursive;
+    padding: 0;
+    font-size: 20px;
+}
+.home-h1{
+    font-family: "Itim", cursive;
+    font-size: 40px;
+}
+.text{
+    font-family: "Itim", cursive;
+}
+.card:hover{
+    transform: scale(1.05);
+    border: 1px solid blue;
+    cursor: pointer;
+    }
+.imp{
+    text-align: left !important;
+}
+
+.more:hover .menu-opt {
+    display: block;
+  }
+
+
+  .popup-container {
+    position: fixed;
+    height: 250px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  .popup-container1 {
+    position: fixed;
+    height: 350px;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  @media only screen and (max-width: 600px) {
+    .popup-container1 {
+      width: 88vw;
+    }
+    
+  }
+  .blurred-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
