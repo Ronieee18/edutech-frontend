@@ -35,8 +35,8 @@ function BeInstructor() {
   }
   return (
     <div>
-        <div className="flex gap-20">
-            <img src="instructor.png" alt="Become an Instructor" />
+        <div className="flex gap-20 max-[800px]:flex-col">
+            <img src="instructor.png" alt="Become an Instructor" className='max-[800px]:h-[150px] max-[800px]:w-[150px]' />
             <div className='my-4'>
                 <h1 className='text text-2xl text-left'>Become an Instructor</h1>
                 <h1 className='text-xl text-left mt-2'>Share your Academic Career & Experience:</h1>
