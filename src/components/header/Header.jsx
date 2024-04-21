@@ -38,8 +38,8 @@ function Header() {
        <div className='m-2 mt-6 '>
         {!useAuth.isLoggedIn ?(
             <div className='flex gap-6 mr-10'>
-          <Link to='/login' className='text-xl  hover:bg-[#846446] hover:text-white px-5 py-1.5 rounded-xl'>  Login </Link>
-          <Link to='/signup' className='text-xl  hover:bg-[#846446] hover:text-white px-5 py-1.5 rounded-xl '> Signup </Link>
+          <Link to='/login' className='text-xl  hover:bg-[#846446] hover:text-white px-5 py-1.5 rounded-xl'>  Login/Signup </Link>
+          {/* <Link to='/signup' className='text-xl  hover:bg-[#846446] hover:text-white px-5 py-1.5 rounded-xl '> Signup </Link> */}
           </div>
         ):(
           <>
