@@ -32,13 +32,13 @@ function Header() {
         <Link to="/">
         <div className='flex  items-center'>
        <img src="logo.png" alt="logo" height={80} width={90} />
-       <h1 className='logo'>Edutech</h1>
+       <h1 className='logo text-lg'>Edutech</h1>
        </div>
        </Link>
        <div className='m-2 mt-6 '>
         {!useAuth.isLoggedIn ?(
-            <div className='flex gap-6 mr-10'>
-          <Link to='/login' className='text-xl  hover:bg-[#846446] hover:text-white px-5 py-1.5 rounded-xl'>  Login/Signup </Link>
+            <div className='flex gap-6 mr-10 max-[600px]:mr-0'>
+          <Link to='/login' className='text-xl max-[600px]:text-lg  hover:bg-[#846446] hover:text-white px-5 py-1.5 rounded-xl'>  Login/Signup </Link>
           {/* <Link to='/signup' className='text-xl  hover:bg-[#846446] hover:text-white px-5 py-1.5 rounded-xl '> Signup </Link> */}
           </div>
         ):(
