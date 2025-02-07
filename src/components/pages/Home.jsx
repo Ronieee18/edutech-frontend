@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import About from './About';
 
 function Home() {
+  const useAuth=useContext(AuthContext);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = ['img11.png', 'img22.png'];
   
@@ -63,7 +64,11 @@ function Home() {
             <h1 className='home-h1'>Welcome to Edutech!</h1>
             <p className='text-[#474444] w-[100%]  '>"Embark on your journey of knowledge with our comprehensive range of courses, designed for learners of all levels. Discover, learn, and grow with ease on our platform."
                 </p>
-            <button className='p-2 bg-[#846446] text-white mt-4 w-2/4 text-2xl rounded-lg'>Login</button>
+           {
+           (useAuth.isLoggedIn && useAuth.user) ? 
+           <button onClick={()=>navigate('/courses')} className='p-2 bg-[#846446] text-white mt-4 w-2/4 text-2xl rounded-lg'>Explore courses</button>:
+           <button onClick={()=>navigate('/login')} className='p-2 bg-[#846446] text-white mt-4 w-2/4 text-2xl rounded-lg'>Login</button>
+           }
         </div>
     </div>
     <About/>
