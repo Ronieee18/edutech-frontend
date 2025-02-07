@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import About from "./About";
+import { AuthContext } from "../context/Authcontext";
 
 function Home() {
   const useAuth = useContext(AuthContext);
