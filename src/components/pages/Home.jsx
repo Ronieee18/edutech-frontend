@@ -1,8 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 import About from "./About";
 import { AuthContext } from "../context/Authcontext";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
   const useAuth = useContext(AuthContext);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = ["img11.png", "img22.png"];
